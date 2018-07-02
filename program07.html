@@ -17,13 +17,13 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body ng-app="app1">
+<body ng-app="app1" style="background-color:rgb(189, 235, 241)">
     <br>
     <div class="container" ng-app="app1" ng-controller="ctrl1">
+        <div class="card" style="padding: 10px">
         <h1>Fahrenheit to Celcius Conversion</h1>
-        <form autocomplete="off"> 
+        <form autocomplete="off" style="margin-right: 60%"> 
             <div class="form-group">
-                <label for="fInput">Fahrenheit</label>
                 <input type="text" class="form-control" id="fInput" ng-model="fDegree" placeholder="Enter Fahrenheit value">
             </div>
             <button type="submit" class="btn btn-primary" ng-click="updateValue()">Submit</button>
@@ -31,12 +31,14 @@
         <br>
         <h3>Celcius: {{calculation}}</h3>
     </div>
+</div>
 
 <br>
-<hr>
+
 <div class="container"  ng-controller="ctrl2">
+        <div class="card" style="padding: 10px">
         <h1>Quadratic Formula</h1>
-    <form autocomplete="off"> 
+    <form autocomplete="off" style="margin-right: 60%"> 
         <div class="form-group">
             <label for="aInput">a</label>
             <input type="text" class="form-control" id="aInput" ng-model="a" placeholder="0">
@@ -54,12 +56,14 @@
     <h3 id="x1">x1: {{x1}}</h3>
     <h3 id="x2">x2: {{x2}}</h3>
 </div>
+</div>
 
 <br>
-<hr>
+
 <div class="container"  ng-controller="ctrl3">
+        <div class="card" style="padding: 10px">
         <h1>Cubic Formula</h1>
-    <form autocomplete="off"> 
+    <form autocomplete="off" style="margin-right: 60%"> 
         <div class="form-group">
             <label for="aInput">a</label>
             <input type="text" class="form-control" id="aInput" ng-model="aCubic" placeholder="0">
@@ -76,9 +80,10 @@
         <button type="submit" class="btn btn-primary" ng-click="solveCubic()">Solve</button>
     </form>
     <br>
-    <h3 id="cubicFormula"></h3>
+    <h3 id="cubicFormula">Cubic Formula:</h3>
     <h3 id="roots"></h3>
 
+</div>
 </div>
 <br><br>
 

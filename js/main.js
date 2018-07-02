@@ -102,7 +102,7 @@ app1.controller('ctrl3', function ($scope) {
     // Convert back from depressed cubic
     for (var i = 0; i < roots.length; i++)
       roots[i] -= b / (3 * a);
-      
+
       document.getElementById("cubicFormula").innerHTML = 'Cubic Formula: ' + a + "x&#179; + " + b + "x&#178 + " + c + " x + " + d;
       document.getElementById("roots").innerHTML = roots;
     return roots;
