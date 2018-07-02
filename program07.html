@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body ng-app="app1">
+    <br>
+    <div class="container" ng-app="app1" ng-controller="ctrl1">
+        <h1>Fahrenheit to Celcius Conversion</h1>
+        <form autocomplete="off"> 
+            <div class="form-group">
+                <label for="fInput">Fahrenheit</label>
+                <input type="text" class="form-control" id="fInput" ng-model="fDegree" placeholder="Enter Fahrenheit value">
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click="updateValue()">Submit</button>
+        </form>
+        <br>
+        <h3>Celcius: {{calculation}}</h3>
+    </div>
+
+<br>
+<hr>
+<div class="container"  ng-controller="ctrl2">
+        <h1>Quadratic Formula</h1>
+    <form autocomplete="off"> 
+        <div class="form-group">
+            <label for="aInput">a</label>
+            <input type="text" class="form-control" id="aInput" ng-model="a" placeholder="0">
+
+            <label for="bInput">b</label>
+            <input type="text" class="form-control" id="bInput" ng-model="b" placeholder="0">
+
+            <label for="cInput">c</label>
+            <input type="text" class="form-control" id="cInput" ng-model="c" placeholder="0">
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="solveQuad()">Solve</button>
+    </form>
+    <br>
+    <h3 id="eq">Equation: {{equation}}</h3>
+    <h3 id="x1">x1: {{x1}}</h3>
+    <h3 id="x2">x2: {{x2}}</h3>
+</div>
+
+<br>
+<hr>
+<div class="container"  ng-controller="ctrl3">
+        <h1>Cubic Formula</h1>
+    <form autocomplete="off"> 
+        <div class="form-group">
+            <label for="aInput">a</label>
+            <input type="text" class="form-control" id="aInput" ng-model="aCubic" placeholder="0">
+
+            <label for="bInput">b</label>
+            <input type="text" class="form-control" id="bInput" ng-model="bCubic" placeholder="0">
+
+            <label for="cInput">c</label>
+            <input type="text" class="form-control" id="cInput" ng-model="cCubic" placeholder="0">
+
+            <label for="cInput">d</label>
+            <input type="text" class="form-control" id="dInput" ng-model="dCubic" placeholder="0">
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="solveCubic()">Solve</button>
+    </form>
+    <br>
+    <h3 id="cubicFormula"></h3>
+    <h3 id="roots"></h3>
+
+</div>
+<br><br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
